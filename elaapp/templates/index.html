@@ -120,6 +120,9 @@
         .navigation-background .logo img{
             height: 50px;
         }
+        .topnav li:hover{
+            background-color: rgba(0,0,0,0.6);
+        }
     </style>
  </head>
 
@@ -143,7 +146,7 @@
                 <div class="row">
                     <div class="col-sm-3">
                         <div class="logo">
-                            <a href="index-2.html"><img src="{% static 'images/logos/logo.png' %}"></a>
+                            <a href="/"><img src="{% static 'images/logos/logo.png' %}"></a>
                         </div>
                     </div>
                     <div class="col-sm-9">
@@ -158,7 +161,7 @@
                                     </button>
                                 </div>
                                 <div class="navbar-collapse collapse">
-                                    <ul class="nav navbar-nav navbar-right">
+                                    <ul class="topnav nav navbar-nav navbar-right">
                                         <li class="active"><a class="smoth-scroll" href="#home">Home <div class="ripple-wrapper"></div></a>
                                         </li>
                                         <li  class="dropdown">
@@ -190,28 +193,28 @@
                 <div class="slide-item" style="background-image:url('{% static 'images/slides/Slider1.jpg' %}');">
                     <div class="slide-inner">
                         <div class="contain animated fadeInRightBig text-slider">
-                            <h2 class="maintitle">Turn your free Wifi into effective marketing Tool.</h2>
-                            <p class="subtitle">All the essential WiFi services in a single package</p>
+                            <h2 class="subtitle">Turn your free Wifi into effective marketing Tool.</h2>
+                            <!-- <p class="subtitle">All the essential WiFi services in a single package</p> -->
                         </div>
-                        <a href="index.html#pricing" class="roll-button button-slider">Buy Now</a>                        
+                        <a href="/#contact" class="roll-button button-slider">get started</a>                        
                     </div>
                 </div>
                 <div class="slide-item" style="background-image:url('{% static 'images/slides/Slider2.jpg' %}');">                        
                     <div class="slide-inner">
                         <div class="contain animated fadeInRightBig text-slider">
-                            <h2 class="maintitle">Get more visibility on your customers .</h2>
-                            <p class="subtitle">Complete WiFi monetization solution for all business sizes</p>
+                            <h2 class="subtitle">Get more visibility on your customers .</h2>
+                            <!-- <p class="subtitle">Complete WiFi monetization solution for all business sizes</p> -->
                         </div>
-                        <a href="index.html#pricing" class="roll-button button-slider">Buy Now</a> 
+                        <a href="/#contact" class="roll-button button-slider">get started</a>   
                     </div>                   
                 </div>
                 <div class="slide-item" style="background-image:url('{% static 'images/slides/Slider3.jpg' %}');">                        
                     <div class="slide-inner">
                         <div class="contain animated fadeInRightBig text-slider">
-                            <h2 class="maintitle">Connect and Engage with your repeated customers .</h2>
-                            <p class="subtitle">Complete WiFi monetization solution for all business sizes</p>
+                            <h2 class="subtitle">Connect and Engage with your repeated customers .</h2>
+                            <!-- <p class="subtitle">Complete WiFi monetization solution for all business sizes</p> -->
                         </div>
-                        <a href="index.html#pricing" class="roll-button button-slider">Buy Now</a> 
+                        <a href="/#contact" class="roll-button button-slider">get started</a>  
                     </div>                   
                 </div>  
             </div>        
@@ -228,10 +231,10 @@
          <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="slogantitle section-space-padding">
-                    <h2>“Elastic Solution is jordan​ b​ ased company that provide
+                    <p>“Elastic Solution is jordan​ b​ ased company that provide
                     the new sophisticated marketing​ ​tools that uses your free wifi in
                     your restaurant​ ​, cafe​ ,​ retails​ ​or any business where customer
-                    engage and analytics is a key objective .”</h2>
+                    engage and analytics is a key objective .”</p>
                 </div>
               </div>
           </div>
@@ -243,7 +246,7 @@
                 <div class="row" style="margin-bottom:60px;">
                     <div class="col-md-10 col-md-offset-1">
                         <h2 class="text-center">
-                            HOW WE WORK ?
+                            HOW IT WORK ?
                         </h2>
                     </div>
                 </div>
@@ -268,7 +271,7 @@
                     <div class="col-md-3 part" data-sr="enter bottom and scale up 5% over 0.5s wait 2s">
                         <img class="img-responsive section-thumb" src="{% static 'images/symbolic-icons/dollar.png' %}" />
                         <p>
-                         The system will analyze the collected data to be used for :
+                         The system will analyze the collected data to be used for:
                         </p>
                         <ul style="padding-left: 30px">
                             <li>Marketing automation.</li>
@@ -289,7 +292,6 @@
                 <div class="col-sm-12">
                     <div class="section-title">
                         <h2>Contact Me.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                     </div>
                 </div>
             </div>  
@@ -298,14 +300,14 @@
                <div class="col-md-4 col-sm-4">
                 <div class="contact-us-detail">  
                  <i class="fa fa-mobile color-6"></i>
-                  <p><a href="tel:+1234567890">+1234 567 890</a></p>
+                  <p><a href="tel:+1234567890">0785501835</a></p>
                  </div>
                 </div>
                
                <div class="col-md-4 col-sm-4">
                 <div class="contact-us-detail">
                  <i class="fa fa-mail-reply color-5"></i>
-                  <p><a href="mailto:name@domain.com">name@domain.com</a></p>
+                  <p><a href="mailto:name@domain.com">sales@elastic-solutions.com</a></p>
                  </div>
                 </div>
                  
@@ -325,54 +327,40 @@
            <div class="col-md-6">   
                  
                <div class="row">
-                  <form>   
-					  <div class="col-sm-6">
-						<div class="form-group">
-						  <input type="text" id="name" class="form-control" placeholder="Your Name">
-						 </div>
+                    <form>   
+					    <div class="col-sm-6">
+						    <div class="form-group">
+						        <input type="text" id="name" class="form-control" placeholder="Your Name">
+						    </div>
                         </div>
 								
-                       <div class="col-sm-6">
-					    <div class="form-group">
-						 <input type="email" id="email" class="form-control" placeholder="Your Email">
-						 </div>
+                        <div class="col-sm-6">
+					        <div class="form-group">
+						        <input type="email" id="email" class="form-control" placeholder="Your Email">
+						    </div>
                         </div>
-                        
-                        <div class="col-sm-6">
-						  <div class="form-group">
-							<input type="text" id="website" class="form-control" placeholder="Your Website">
-						   </div>
-                          </div>
-                          
-                        <div class="col-sm-6">
-						  <div class="form-group">
-							<input type="text" id="address" class="form-control" placeholder="Where are You From?">
-						   </div>
-                          </div>
 								
-                         <div class="col-sm-12">
-						  <select id="subject" class="form-group form-control">
-							<option value="" selected disabled>Subject</option>
-							<option>Website Design & Development</option>
-							<option>Wordpress Development</option>
-							<option>Search Engine Optimization</option>
-                            <option>Mobile Website</option>
-							<option>I Want to General Talk</option>
-                            <option>Other</option>
-						   </select>
-                          </div>
+                        <div class="col-sm-12">
+						    <select id="subject" class="form-group form-control">
+                                <option value="" selected disabled>Subject</option>
+                                <option>social wifi marketing</option>
+                                <option>social wifi analytics</option>
+                                <option>location tracking</option>
+                                <option>ads integration</option>
+                                <option>other</option>
+						    </select>
+                        </div>
 								
-                       <div class="col-sm-12">
-					    <div class="textarea-message form-group">
-					      <textarea id="message" class="textarea-message form-control" placeholder="Your Message" rows="5"></textarea>
-						  </div>
-                         </div>
+                        <div class="col-sm-12">
+                            <div class="textarea-message form-group">
+                            <textarea id="message" class="textarea-message form-control" placeholder="Your Message" rows="5"></textarea>
+                            </div>
+                        </div>
                    
                    
-                    <div class="text-center">      
-		   <button type="submit" class="button button-style button-style-dark button-style-icon fa fa-long-arrow-right text-center">Submit</button>
-	                  </div>
-                       
+                        <div class="text-center">      
+		                    <button type="submit" class="button button-style button-style-dark button-style-icon fa fa-long-arrow-right text-center">Submit</button>
+	                    </div>
                   </form>
                    
 				</div>
@@ -391,11 +379,11 @@
        
       <div class="margin-top-80"> 
        <ul class="social-icon">
-         <li><a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
-         <li><a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="https://www.facebook.com/ElasticSolution/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
+         <!-- <li><a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
          <li><a href="#" target="_blank" class="google-plus"><i class="fa fa-google-plus"></i></a></li>
          <li><a href="#" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a></li>
-         <li><a href="#" target="_blank" class="dribbble"><i class="fa fa-dribbble"></i></a></li>
+         <li><a href="#" target="_blank" class="dribbble"><i class="fa fa-dribbble"></i></a></li> -->
        </ul>
       </div>
        
@@ -411,18 +399,17 @@
                 </div>
                 
                 <div class="col-md-4 text-left">
-                    <p>Social media account for ElasticSolution</p>
-                    <p>Copy right 2017 ElasticSolution.</p>
+                    <p>&#169 2017 ElasticSolution.</p>
                 </div>
                 <div class="col-md-4 text-left">
                     <p>
-                        -Contact us :
+                        Contact us :
                             Email : sales@elastic-solutions.com
                             support@elastic-solutions.com
-                            Mobile :00962785501835
+                            0785501835
                 
                     </p>
-                    <p><a href="/about" class="smoth-scroll">-about</a></p>
+                    <p><a href="/about" class="smoth-scroll">About</a></p>
                 </div>              
             </div>
         </div>
