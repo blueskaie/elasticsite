@@ -25,7 +25,7 @@ SECRET_KEY = '3=hrvun=8&i+11=qgjoye8x2wh!27%#6dnw7@g#cx1_$hmjyo1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','takumi.pythonanywhere.com']
 
 
 # Application definition
