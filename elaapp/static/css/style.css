@@ -1007,12 +1007,32 @@ ul.portfolio li.active {
 @media only screen and (max-width: 767px) {
     /* ------my------- */
     .logo img{
-        width: 100px;
-        margin: 20px 35%;
+        height: auto;
+        width: 60%;
+        margin: 20px 20%;    
     }
     .navigation-background .logo img{
-        width: 100px;
-        margin: 20px 35%;      
+        height: auto;
+        width: 30%;
+        margin: 20px 35%;
+    }
+    .dropbtn {
+        cursor: pointer;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding: 11px 15px;
+        -webkit-transition: .3s;
+        transition: .3s;
+        font-weight: 600;
+        height: 42px;
+        background-color: transparent;
+        border: none;   
+    }
+    .dropdown-content{
+        z-index: 0;
+        padding-left: 20px;
     }
     .navbar-toggle {
         /* margin-right: 0px;

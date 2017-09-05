@@ -47,28 +47,6 @@
         margin: 0 auto;
     }
         /* Style The Dropdown Button */
-    .dropbtn {
-        cursor: pointer;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 12px;
-        letter-spacing: 1px;
-        padding: 28px 15px;
-        -webkit-transition: .3s;
-        transition: .3s;
-        font-weight: 600;
-        height: 79px;
-        background-color: transparent;
-        border: none;   
-    }
-
-    .navigation-background .navigation-menu .navbar-nav li .dropbtn {
-        color: #fff;
-        padding: 19px 15px;
-        -webkit-transition: .3s;
-        transition: .3s;
-        height: 60px;
-    }
 
     /* The container <div> - needed to position the dropdown content */
     .dropdown {
@@ -79,11 +57,10 @@
     /* Dropdown Content (Hidden by Default) */
     .dropdown-content {
         display: none;
-        position: absolute;
+        /* position: absolute; */
         background-color: rgba(0,0,0,0.6);
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
     }
 
     /* Links inside the dropdown */
@@ -92,7 +69,7 @@
         padding: 5px 16px;
         text-decoration: none;
         display: block;
-        width: 200px;
+        width: 220px;
     }
 
     a:hover#dropitem{
@@ -121,15 +98,43 @@
         font-size: 18px;
         line-height: 50px;
     }
+    @media only screen and (min-width: 767px) {
+    .dropbtn {
+        cursor: pointer;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding: 28px 15px;
+        -webkit-transition: .3s;
+        transition: .3s;
+        font-weight: 600;
+        height: 79px;
+        background-color: transparent;
+        border: none;   
+    }
+    .navigation-background .navigation-menu .navbar-nav li .dropbtn {
+        color: #fff;
+        padding: 19px 15px;
+        -webkit-transition: .3s;
+        transition: .3s;
+        height: 60px;
+    }
+    .dropdown-content {
+        position: absolute; 
+        z-index: 1;
+    } 
     .logo img{
         margin-top: 8px;
         height: 66px;
         width: auto;
     }
-    .navigation-background .logo img{
+     .navigation-background .logo img{
         margin-top: 8px;
-        height: 50px;        
-    }
+        height: 60px;        
+    } 
+}
+
 
     a:hover.greenlink{
         color: green;
@@ -200,20 +205,19 @@
             <div class="row">
                 <div class="col-md-4 text-center">
                     <a href="/" class="smoth-scroll"><img src="{% static 'images/logos/logo.png' %}" style="width: 60%; height: auto"></a>
-                    <p>&copy 2017 ElasticSolution.</p>
+                    <p>&copy2017 ElasticSolution.</p>
                 </div>
                 
                 <div class="col-md-4 text-left">
                 </div>
                 <div class="col-md-4 text-left">
-                    <p>
-                        Contact us :
-                            <p>Email : sales@elastic-solutions.com</p>
-                            <p>support@elastic-solutions.com</p>
+                    <p>Contact us :</p>
+                        <div style="padding-left: 30px">
+                            <p>Email : <a class="greenlink" href="mailto:sales@elastic-solutions.com">sales@elastic-solutions.com</a></p>
+                            <p style="padding-left:55px;"><a class="greenlink" href="mailto:support@elastic-solutions.com">support@elastic-solutions.com</a></p>
                             <p>Mobile :00962785501835</p>
-                
-                    </p>
-                    <p><a href="/about" class="smoth-scroll">About</a></p>
+                        </div>
+                    <p><a class="greenlink" href="/about" class="smoth-scroll">About</a></p>
                 </div>              
             </div>
         </div>
