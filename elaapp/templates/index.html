@@ -88,21 +88,24 @@
             background-color: rgba(0,0,0,0.6);
         }
 
-         @media only screen and (min-width: 767px) {
-            /* Style The Dropdown Button */
-            .dropbtn {
+        .dropbtn{
                 cursor: pointer;
                 color: #fff;
                 text-transform: uppercase;
                 font-size: 12px;
+                background-color: transparent;
+                border: none;
+        }
+         @media only screen and (min-width: 767px) {
+            /* Style The Dropdown Button */
+            .dropbtn {
                 letter-spacing: 1px;
                 padding: 28px 15px;
                 -webkit-transition: .3s;
                 transition: .3s;
                 font-weight: 600;
                 height: 79px;
-                background-color: transparent;
-                border: none;   
+   
             }
 
             .navigation-background .navigation-menu .navbar-nav li .dropbtn {
@@ -406,14 +409,14 @@
             <div class="row">
                 <div class="col-md-4 text-center">
                     <a href="/" class="smoth-scroll"><img src="{% static 'images/logos/logo.png' %}" style="width: 60%; height: auto"></a>
-                    <p>&copy2017 ElasticSolution.</p>
+                    <p class="title">&copy2017 ElasticSolution.</p>
                 </div>
                 
                 <div class="col-md-4 text-left">
                 </div>
-                <div class="col-md-4 text-left">
+                <div class="col-md-4 text-left"  style="padding-left: 30px">
                     <p>Contact us :</p>
-                        <div style="padding-left: 30px">
+                        <div>
                             <p>Email : <a class="green" href="mailto:sales@elastic-solutions.com">sales@elastic-solutions.com</a></p>
                             <p style="padding-left:55px;"><a class="green" href="mailto:support@elastic-solutions.com">support@elastic-solutions.com</a></p>
                             <p>Mobile :00962785501835</p>

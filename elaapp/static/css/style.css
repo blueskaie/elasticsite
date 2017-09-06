@@ -999,6 +999,9 @@ ul.portfolio li.active {
 	 }
 	 
      .footer-section p {
+         text-align: left !important;
+     }
+     .footer-section p.title{
          text-align: center !important;
      }
 }
@@ -1028,7 +1031,7 @@ ul.portfolio li.active {
         font-weight: 600;
         height: 42px;
         background-color: transparent;
-        border: none;   
+        border: 1px solid transparent;   
     }
     .dropdown-content{
         z-index: 0;
@@ -1039,6 +1042,10 @@ ul.portfolio li.active {
         margin-top: -30px; */
         margin: 0 43%;
     }
+
+    /* .footer-section p {
+         text-align: left !important;
+    } */
     /*--------------*/
     .navbar-toggle .icon-bar {
         background: #f8f8f8;
